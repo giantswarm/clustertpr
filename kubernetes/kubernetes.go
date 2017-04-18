@@ -13,8 +13,8 @@ type Kubernetes struct {
 	DNS dns.DNS `json:"dns" yaml:"dns"`
 	// Domain is the base domain of the Kubernetes cluster, e.g.
 	// g8s.fra-1.giantswarm.io.
-	Domain    string              `json:"domain" yaml:"domain"`
-	Hyperkube hyperkube.Hyperkube `json:"hyperkube" yaml:"hyperkube"`
-	Ingress   ingress.Ingress     `json:"ingress" yaml:"ingress"`
-	Kubelet   kubelet.Kubelet     `json:"kubelet" yaml:"kubelet"`
+	Domain    string                    `json:"domain" yaml:"domain"`
+	Hyperkube hyperkube.Hyperkube       `json:"hyperkube" yaml:"hyperkube"`
+	Ingress   ingress.IngressController `json:"ingress" yaml:"ingress"`
+	Kubelet   kubelet.Kubelet           `json:"kubelet" yaml:"kubelet"`
 }
