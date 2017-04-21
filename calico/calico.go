@@ -1,9 +1,7 @@
 package calico
 
 type Calico struct {
-	// AltNames is the alternative names used to generate certificates for Calico.
-	AltNames string `json:"alt_names" yaml:"altNames"`
-	CIDR     int    `json:"cidr" yaml:"cidr"`
+	CIDR int `json:"cidr" yaml:"cidr"`
 	// Domain is the API domain for Calico, e.g.
 	// calico.<cluster-id>.g8s.fra-1.giantswarm.io.
 	Domain string `json:"domain" yaml:"domain"`
