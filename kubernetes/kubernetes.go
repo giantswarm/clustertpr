@@ -6,6 +6,7 @@ import (
 	"github.com/giantswarm/clustertpr/kubernetes/hyperkube"
 	"github.com/giantswarm/clustertpr/kubernetes/ingress"
 	"github.com/giantswarm/clustertpr/kubernetes/kubelet"
+	"github.com/giantswarm/clustertpr/kubernetes/networksetup"
 )
 
 type Kubernetes struct {
