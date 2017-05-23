@@ -10,11 +10,8 @@ import (
 )
 
 type Kubernetes struct {
-	API api.API `json:"api" yaml:"api"`
-	DNS dns.DNS `json:"dns" yaml:"dns"`
-	// Domain is the base domain of the Kubernetes cluster, e.g.
-	// g8s.fra-1.giantswarm.io.
-	Domain            string                    `json:"domain" yaml:"domain"`
+	API               api.API                   `json:"api" yaml:"api"`
+	DNS               dns.DNS                   `json:"dns" yaml:"dns"`
 	Hyperkube         hyperkube.Hyperkube       `json:"hyperkube" yaml:"hyperkube"`
 	IngressController ingress.IngressController `json:"ingressController" yaml:"ingressController"`
 	Kubelet           kubelet.Kubelet           `json:"kubelet" yaml:"kubelet"`
