@@ -18,8 +18,8 @@ type Kubernetes struct {
 	// g8s.fra-1.giantswarm.io.
 	Domain            string                    `json:"domain" yaml:"domain"`
 	Hyperkube         hyperkube.Hyperkube       `json:"hyperkube" yaml:"hyperkube"`
-	Kubectl           kubectl.Kubectl           `json:"kubectl" yaml:"kubectl"`
 	IngressController ingress.IngressController `json:"ingressController" yaml:"ingressController"`
+	Kubectl           kubectl.Kubectl           `json:"kubectl" yaml:"kubectl"`
 	Kubelet           kubelet.Kubelet           `json:"kubelet" yaml:"kubelet"`
 	NetworkSetup      networksetup.NetworkSetup `json:"networkSetup" yaml:"networkSetup"`
 	SSH               ssh.SSH                   `json:"ssh" yaml:"ssh"`
