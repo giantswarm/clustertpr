@@ -13,14 +13,14 @@ import (
 
 type Kubernetes struct {
 	API api.API `json:"api" yaml:"api"`
-	DNS dns.DNS `json:"dns" yaml:"dns"`
-	// Domain is the base domain of the Kubernetes cluster, e.g.
-	// g8s.fra-1.giantswarm.io.
-	Domain            string                    `json:"domain" yaml:"domain"`
 	// CloudProvider enables cloud provider specific functionality
 	// can be aws, azure, gce, ... needs to be unset for baremetal
 	// see https://kubernetes.io/docs/getting-started-guides/scratch/#cloud-providers)
 	CloudProvider     string                    `json:"cloudProvider" yaml:"cloudProvider"`
+	DNS dns.DNS `json:"dns" yaml:"dns"`
+	// Domain is the base domain of the Kubernetes cluster, e.g.
+	// g8s.fra-1.giantswarm.io.
+	Domain            string                    `json:"domain" yaml:"domain"`
 	Hyperkube         hyperkube.Hyperkube       `json:"hyperkube" yaml:"hyperkube"`
 	IngressController ingress.IngressController `json:"ingressController" yaml:"ingressController"`
 	Kubectl           kubectl.Kubectl           `json:"kubectl" yaml:"kubectl"`
